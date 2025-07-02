@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>machetes</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="centrado">
+    <h1>machetes / torpedos / chuletas / acordeones / copialinas</h1>
+    </div>
+
+        
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(130).png?v=1712853564191  
+"
+         alt=""/></div>
+
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/14c3e389-1f82-48a6-8b2f-6900b319b19d.image.png?v=1710860558926  
+"
+         alt=""/>
+    </div>
+    <div class="centrado">
+       <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(180).png?v=1723043391942"
+         alt=""/>
+    </div>
+    
+    <div class="centrado">
+       <img src="    https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(183).png?v=1723595028766
+"
+         alt=""/></div>
+
+    
+
+    <div class="centrado">
+       <img src=" https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Sandin_Image_Processor.jpg?v=1707598851910
+"
+         alt=""/></div>
+    <div class="centrado">
+    <br>
+    <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(100).png?v=1707596278007"
+    alt=""/>
+        </div>
+    <div class="centrado">
+       <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(117).png?v=1710860160440"
+         alt=""/></div>
+    <div class="centrado">
+       <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(105).png?v=1707600851640
+"
+         alt=""/></div>
+    
+    <div class="centrado">
+       <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(182).png?v=1723593418315
+"
+         alt=""/></div>
+    
+     <div class="centrado">
+       <img src="https://cdn.glitch.global/4a0ff4e8-1f6b-4ad1-a1d0-9f79b796e453/Captura%20de%20pantalla%20(85).png?v=1746539022663
+"
+         alt=""/></div>
+        
+    
+    <br><br><br><br><br>
+    <canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(osc(3,0.3,4))
+.mask(shape(2,0.1).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>2do encuentro</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="centrado">
+    <h1 class="title">2do Encuentro</h1>
+    </div>
+    <br><h1><li>¿Dónde almacenar imágenes y videos? 
+            <a href="https://glitch.com/" target="_blank"
+              >  Glitch</a
+            ></li></h1>   
+    <br><h1><li>Funciones de geometría</li></h1>
+    <br><h1><li>Funciones de color</li></h1>
+    <br><h1><li>Funciones de modulación</li></h1>
+    <br><h1><li>Concepto de arrays y smooth</li></h1>
+    <br><h1><li>Velocidad</li></h1>
+    <br><br><br><br><br>
+    <canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(osc(3,0.3,4))
+.mask(shape(2,0.1).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+  </body>
+</html>
